@@ -1875,6 +1875,8 @@ pre {
 	background-color: transparent;
 	margin: 0;
 	padding: 0;
+	white-space: pre;
+	overflow: auto;
 }
 .exampleCorrect {
 	background-color: #ccffcc;
