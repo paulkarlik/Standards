@@ -156,7 +156,8 @@ a.themeauthor {
 	text-decoration: none;
 	font-weight: bold;
 	letter-spacing: -2px;
-	text-shadow: 0px 1px 0px #FFF;
+	text-shadow: 1px 1px 0px #fff;
+	filter: dropshadow(color=#fff, offx=1, offy=1); 
 }
 
 #header #site-title a:hover {
@@ -1900,6 +1901,3 @@ pre {
 	border: 1px solid #800000;
 	margin: 0 0 15px 0;
 }
-
-
-	
