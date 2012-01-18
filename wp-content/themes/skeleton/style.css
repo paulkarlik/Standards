@@ -158,15 +158,11 @@ a.themeauthor {
 	text-decoration: none;
 	font-weight: bold;
 	letter-spacing: -2px;
-	text-shadow: 1px 1px 0px #fff;
-	-webkit-transition-property: -webkit-transform;
-	-moz-transition-property: -moz-transform;
-	-o-transition-property: -o-transform;
-	transition-property: transform;
-	-webkit-transition-duration: 0.2s;
-	-moz-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
-	transition-duration: 0.2s;
+	text-shadow: 1px 1px 0px #fff;	
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+	-moz-transition: -moz-transform 0.2s ease-out;
+	-o-transition: -o-transform 0.2s ease-out;
+	transition: transform 0.2s ease-out;
 }
 
 #header #site-title a:hover {
@@ -652,6 +648,7 @@ li.menu-item a:hover {
 	padding-bottom: 10px;
 }
 #nav-below {
+	padding-bottom: 10px;
 	padding-top: 10px;
 }
 
@@ -1838,7 +1835,6 @@ body.page-template-onecolumn-page-php #comments .commentlist li .comment-meta {}
 
 #nav-below .nav-previous a {
 	float: left;
-	
 }
 #nav-below .nav-next a {
 	float: right;
