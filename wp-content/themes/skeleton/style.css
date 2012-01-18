@@ -1924,12 +1924,9 @@ pre {
 	-pie-background: linear-gradient(#F5F5F5, #ECECEC);
 	padding-bottom: 1px;
 	padding-top: 10px;
-	-webkit-border-top-right-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	-moz-border-radius-topright: 5px;
-	-moz-border-radius-bottomright: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     -pie-box-shadow: 0 1px 1px #ccc;
 	behavior: url("./wp-content/themes/skeleton/PIE.php");
@@ -1938,7 +1935,7 @@ pre {
 	background: transparent none repeat scroll 0 0;
 	box-shadow: none;
     -pie-box-shadow: none;
-	margin-right: 15px;
+	margin-right: 20px;
 	padding-top: 0;
 }
 #sidebar ul li ul li {
