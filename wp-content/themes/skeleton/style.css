@@ -159,6 +159,14 @@ a.themeauthor {
 	font-weight: bold;
 	letter-spacing: -2px;
 	text-shadow: 1px 1px 0px #fff;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
 }
 
 #header #site-title a:hover {
