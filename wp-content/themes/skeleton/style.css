@@ -151,6 +151,7 @@ a.themeauthor {
 #header div#site-title a,
 #header h1#site-title,
 #header h1#site-title a {
+	display: block;
 	filter: dropshadow(color=#fff, offx=1, offy=1);
 	margin: 0;
 	padding: 0;
