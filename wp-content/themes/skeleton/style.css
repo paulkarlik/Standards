@@ -145,6 +145,7 @@ a.themeauthor {
 	font-size: 40px;
 	line-height: 55px;
 	letter-spacing: -1px;
+	text-transform: uppercase;
 }
 
 #header div#site-title a,
@@ -162,6 +163,11 @@ a.themeauthor {
 
 #header #site-title a:hover {
 	color: #3253ad;
+	-webkit-transform:rotate(-2deg) translateX(40px) scale(1.2);
+	-moz-transform:rotate(-2deg) translateX(40px) scale(1.2);
+	-ms-transform:rotate(-2deg) translateX(40px) scale(1.2);
+	-o-transform:rotate(-2deg) translateX(40px) scale(1.2);
+	transform:rotate(-2deg) translateX(40px) scale(1.2);
 }	
 
 /* Header Tagline */
@@ -170,7 +176,7 @@ a.themeauthor {
 	margin: 0;
 	padding: 0;
 	font-size: 24px;
-	line-height: 18px;
+	line-height: 14px;
 	color: #7d7d7d;
 	letter-spacing: -1px;
 }
