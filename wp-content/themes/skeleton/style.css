@@ -1919,7 +1919,9 @@ pre {
 #sidebar {
 }
 #sidebar ul {
-	background-color: #efefef;
+	background: -moz-linear-gradient(270deg, #F5F5F5, #ECECEC) repeat scroll 0 0 transparent;
+ 	background: -webkit-linear-gradient(270deg, #F5F5F5, #ECECEC) repeat scroll 0 0 transparent;
+	-pie-background: linear-gradient(#F5F5F5, #ECECEC);
 	padding-bottom: 1px;
 	padding-top: 10px;
 	-webkit-border-top-right-radius: 5px;
@@ -1928,7 +1930,19 @@ pre {
 	-moz-border-radius-bottomright: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -pie-box-shadow: 0 1px 1px #ccc;
+	behavior: url("./wp-content/themes/skeleton/PIE.php");
 }
 #sidebar ul li ul {
+	background: transparent none repeat scroll 0 0;
+	box-shadow: none;
+    -pie-box-shadow: none;
+	margin-right: 15px;
 	padding-top: 0;
+}
+#sidebar ul li ul li {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 0;
+	padding: 5px 0 5px 10px;
 }
