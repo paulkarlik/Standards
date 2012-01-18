@@ -1718,7 +1718,7 @@ p.trigger.active a {
 
 /* Needs RWD Check */
 
-#respond {margin:0px;float:left;border-top: 1px solid #dbdbdb;padding-top: 10px;width: 100%;}
+#respond {margin:0px;float:left;border-top: 1px solid #999;padding-top: 10px;width: 100%;}
 
 #respond input[type=text] { width:300px; margin-right:20px; }
 #respond textarea {width:550px; height:120px; padding:10px; }
@@ -1727,10 +1727,10 @@ p.trigger.active a {
 #comments {border: 0;width: 100%;}
 body.dark #comments {background: url(images/dark/divider.png) repeat-x right top;}
 
-#comments h2 {font-size: 1.5em;display: block;border-bottom: 1px solid #d6d6d6;font-weight: bold;}
+#comments h2 {font-size: 1.5em;display: block;border-bottom: 1px solid #999;font-weight: bold;line-height: 200%;}
 #comments h6 {font-family: "Times New Roman", Times, serif;letter-spacing: normal;text-transform: uppercase;margin: 10px 0px;}
 
-#comments .comment-meta { margin:0px 0px 20px 0px; display:block;}
+#comments .comment-meta { /* margin:0px 0px 20px 0px; */ margin:0px 0px 20px 0px; display:block;}
 #comments .commentlist { margin:0px; float:left; list-style:none; width:100%;  }
 #comments .commentlist ul { list-style:none; margin:0; padding:0; clear:both; }
 #comments .commentlist li {margin:0; padding:0;  display:block;}
@@ -1748,7 +1748,7 @@ body.page-template-onecolumn-page-php #comments .commentlist li .comment-meta {}
 #comments .commentlist li li li li li {margin:0 0 20px 25px;}
 #comments .commentlist li li li li li .comment-meta{ width:370px; }
 
-#comments .single-comment { margin-bottom:20px; }
+#comments .single-comment { /* margin-bottom:20px; */ margin-bottom:0px; }
 #comments .comment-author { float:left; margin: 0px 10px 6px 0px; display:inline; width:50px; }
 #comments .comment-author cite { clear:both; font-weight:bold; }
 
