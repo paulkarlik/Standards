@@ -78,6 +78,16 @@
 	// Load head elements
 	wp_head();
 ?>
+<script type="text/javascript">
+	jQuery.SyntaxHighlighter.init({
+		'load': true,
+		'wrapLines': false,
+		// 'theme': 'google',
+		'themes': ['agdark'],
+		'prettifyBaseUrl': 'http://front3nd.com/wp-content/themes/skeleton/scripts/jquery-syntaxhighlighter/prettify',
+		'baseUrl': 'http://front3nd.com/wp-content/themes/skeleton/scripts/jquery-syntaxhighlighter'
+	});
+</script>
 
 </head>
 <body <?php body_class(); ?>>
