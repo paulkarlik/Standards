@@ -161,6 +161,7 @@ add_action('init', 'st_header_scripts');
 function st_header_scripts() {
   $javascripts = wp_enqueue_script('prefixfree',get_bloginfo('template_url') . "/javascripts/prefixfree.js",false,'1.0.4');
   $javascripts .= wp_enqueue_script('jquery');
+  $javascripts .= wp_enqueue_script('syntaxhighlighter',get_bloginfo('template_url') .'/scripts/jquery-syntaxhighlighter/scripts/jquery.syntaxhighlighter.js',array('jquery'),null);
   $javascripts .= wp_enqueue_script('custom',get_bloginfo('template_url') ."/javascripts/app.js",array('jquery'),'1.2.3',true);
 	$javascripts .= wp_enqueue_script('superfish',get_bloginfo('template_url') ."/javascripts/superfish.js",array('jquery'),'1.2.3',true);
 	$javascripts .= wp_enqueue_script('formalize',get_bloginfo('template_url') ."/javascripts/jquery.formalize.min.js",array('jquery'),'1.2.3',true);
