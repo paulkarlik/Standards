@@ -14,9 +14,8 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args= array(
 	'category_name' => 'javascript-standards', // Change these category SLUGS to suit your use.
 	'paged' => $paged, 
-	//'p' => '4'
 	'page__in' => array('131', '137', '166', '188', '208'), 
-	'orderby' => 'menu_order', 
+	'orderby' => 'post_date', 
 	'order' => 'ASC'
 );
 query_posts($args);
