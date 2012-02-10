@@ -1904,14 +1904,15 @@ pre {
 	padding: 0;
 	white-space: pre;
 	overflow: auto;
-	
 }
+
 .exampleCorrect {
 	background-color: #ccffcc;
 	padding: 3px 5px;
 	border: 1px solid #339966;
 	margin: 0 0 15px 0;
 }
+
 .exampleIncorrect {
 	background-color: #ffcccc;
 	padding: 3px 5px;
@@ -1924,8 +1925,7 @@ pre {
 	list-style: disc;
 	margin-left: 20px;
 }
-#sidebar {
-}
+
 #sidebar ul {
 	background: -moz-linear-gradient(270deg, #F5F5F5, #ECECEC) repeat scroll 0 0 transparent;
  	background: -webkit-linear-gradient(270deg, #F5F5F5, #ECECEC) repeat scroll 0 0 transparent;
@@ -1939,6 +1939,7 @@ pre {
     -pie-box-shadow: 0 1px 1px #ccc;
 	behavior: url("./wp-content/themes/skeleton/PIE.php");
 }
+
 #sidebar ul li ul {
 	background: transparent none repeat scroll 0 0;
 	box-shadow: none;
@@ -1946,8 +1947,32 @@ pre {
 	margin-right: 20px;
 	padding-top: 0;
 }
+
 #sidebar ul li ul li {
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 0;
 	padding: 5px 0 5px 10px;
+}
+
+.entry-content pre {
+	background-color: #000000;
+	border-radius: 5px 5px 5px 5px;
+	color: #D3D3D3;
+}
+
+.prettyprint ol.linenums {
+	padding-left: 15px !important;
+	color: #D3D3D3;
+	font-size: 12px;
+	list-style: decimal outside none;
+	padding-left: 47px;
+}
+
+ol.linenums li {
+	margin-bottom: 0;
+}
+
+.agexample {
+	border-radius: 5px;
+	white-space: pre;
 }
