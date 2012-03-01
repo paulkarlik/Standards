@@ -1,19 +1,19 @@
 var Lightbox = {
 	init : function() {
-		$('a.lightbox').click(function(e) {
+		jQuery('a.lightbox').click(function(e) {
 			// hide scrollbars!
-			$('body').css('overflow-y', 'hidden');
+			jQuery('body').css('overflow-y', 'hidden');
 			
-			$('<div id="overlay"></div>')
-				.css('top', $(document).scrollTop())
+			jQuery('<div id="overlay"></div>')
+				.css('top', jQuery(document).scrollTop())
 				.css('opacity', '0')
 				.animate({'opacity': '0.5'}, 'slow')
 				.appendTo('body');
-			$('<div id="lightbox"></div>')
+			jQuery('<div id="lightbox"></div>')
 				.hide()
 				.appendTo('body');
-			$('<img />', {
-					src: $(this).attr('href'),
+			jQuery('<img />', {
+					src: jQuery(this).attr('href'),
 					load: function() {
 					Lightbox.positionLightboxImage();
 				},
@@ -27,21 +27,21 @@ var Lightbox = {
 	},
 	
 	positionLightboxImage : function() {
-		var top = ($(window).height() - $('#lightbox').height()) / 2;
-	  var left = ($(window).width() - $('#lightbox').width()) / 2;
-	  $('#lightbox')
+		var top = (jQuery(window).height() - jQuery('#lightbox').height()) / 2;
+	  var left = (jQuery(window).width() - jQuery('#lightbox').width()) / 2;
+	  jQuery('#lightbox')
 	    .css({
-	      'top': top + $(document).scrollTop(),
+	      'top': top + jQuery(document).scrollTop(),
 	      'left': left
 	    })
 	    .fadeIn();
 	},
 	
 	removeLightbox : function () {
-		$('#overlay, #lightbox')
+		jQuery('#overlay, #lightbox')
 	    .fadeOut('slow', function() {
-	      $(this).remove();
-	      $('body').css('overflow-y', 'auto'); // show scrollbars!
+	      jQuery(this).remove();
+	      jQuery('body').css('overflow-y', 'auto'); // show scrollbars!
 	    });
 	}
 };
