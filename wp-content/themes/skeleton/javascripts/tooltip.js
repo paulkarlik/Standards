@@ -1,7 +1,7 @@
 var Tooltips = {
 	init: function() {
 		// target all linkes with css class selector "rich"
-		var links = $("a.rich");
+		var links = jQuery("a.rich");
 
 		for (var i = 0, ii = links.length; i < ii; i++)
 		{
@@ -13,10 +13,10 @@ var Tooltips = {
 				links[i].parentNode.replaceChild(tipContainer, links[i]);
 				tipContainer.appendChild(links[i]);
 
-				$(links[i]).bind("mouseover", Tooltips.showTipListener);
-				$(links[i]).bind("focus", Tooltips.showTipListener);
-				$(links[i]).bind("mouseout", Tooltips.hideTipListener);
-				$(links[i]).bind("blur", Tooltips.hideTipListener);
+				jQuery(links[i]).bind("mouseover", Tooltips.showTipListener);
+				jQuery(links[i]).bind("focus", Tooltips.showTipListener);
+				jQuery(links[i]).bind("mouseout", Tooltips.hideTipListener);
+				jQuery(links[i]).bind("blur", Tooltips.hideTipListener);
 			}
 		}
 	},
