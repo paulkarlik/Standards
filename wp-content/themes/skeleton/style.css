@@ -1926,6 +1926,10 @@ pre {
 	margin-left: 20px;
 }
 
+.margin-top {
+	margin-top: 10px;
+}
+
 #sidebar ul {
 	background: -moz-linear-gradient(270deg, #F5F5F5, #ECECEC) repeat scroll 0 0 transparent;
  	background: -webkit-linear-gradient(270deg, #F5F5F5, #ECECEC) repeat scroll 0 0 transparent;
